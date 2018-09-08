@@ -46,12 +46,8 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#newBook">添加书籍</a>
-                </li>
-                <li>
-                    <a href="#" data-toggle="modal" data-target="#About">关于</a>
-                </li>
+                <li><a href="#" data-toggle="modal" data-target="#newBook">添加书籍</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#About">关于</a></li>
             </ul>
         </div>
         <!-- 导航栏 菜单 -->
