@@ -23,7 +23,7 @@
 
 ### 3.1 数据库设计
 
-**读者类型表（readertype）**
+#### 读者类型表（readertype）
 
 | **字段名** | **字段类型** | **约束**    | **备注**   |
 | ---------- | ------------ | ----------- | ---------- |
@@ -32,7 +32,7 @@
 | canLendQty | INT(11)      | NULL        | 可借书数量 |
 | canLendDay | INT(11)      | NULL        | 可借书天数 |
 
-**读者表（reader）**
+#### 读者表（reader）
 
 | **字段名**  | **字段类型** | **约束**                      | **备注**   |
 | ----------- | ------------ | ----------------------------- | ---------- |
@@ -43,7 +43,7 @@
 | rdQQ        | VARCHAR(10)  | NULL                          | 联系QQ     |
 | rdBorrowQty | INT(11)      | DEFAULT '0'                   | 已借书数量 |
 
-**书籍表（book）**
+#### 书籍表（book）
 
 | **字段名** | **字段类型**   | **约束**    | **备注** |
 | ---------- | -------------- | ----------- | -------- |
@@ -54,7 +54,7 @@
 | bkPrice    | DECIMAL(5， 2) | NULL        | 价格     |
 | bkStatus   | INT(11)        | NULL        | 在馆状态 |
 
-**借阅记录表（borrow）**
+#### 借阅记录表（borrow）
 
 | **字段名**   | **字段类型** | **约束**                             | **备注**     |
 | ------------ | ------------ | ------------------------------------ | ------------ |
@@ -91,6 +91,6 @@
     - 可以通过读者 ID / 书籍 ID 查询借阅记录。
     - 借书记录中，如果书籍是已归还的，则还书功能不可用。
 
-![](https://github.com/hovenjay/BookManageSystem/blob/master/images/uml1.png)
+![用例图](https://github.com/hovenjay/BookManageSystem/blob/master/images/uml1.png)
 
-![](https://github.com/hovenjay/BookManageSystem/blob/master/images/uml2.png)
+![还书流程](https://github.com/hovenjay/BookManageSystem/blob/master/images/uml2.png)
